@@ -33,9 +33,7 @@ class IndexController extends Action {
 
 		$usuario->__set('nome', $_POST['nome']);
 		$usuario->__set('email', $_POST['email']);
-		
 		$usuario->__set('senha', sha1($_POST['senha']));  
-
 		
 		if($usuario->validarCadastro() && count($usuario->getUsuarioPorEmail()) == 0) {
 		
@@ -55,10 +53,6 @@ class IndexController extends Action {
 
 			$this->render('inscreverse');
 		}
-
 	}
-
 }
-
-
 ?>
