@@ -30,5 +30,4 @@ abstract class Action {
 		require_once "../App/Views/".$classAtual."/".$this->view->page.".phtml";
 	}
 }
-
 ?>

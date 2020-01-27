@@ -13,6 +13,4 @@ class Container {
 		return new $class($conn);
 	}
 }
-
-
 ?>
